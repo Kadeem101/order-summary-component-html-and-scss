@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+$primary-pale-blue:hsl(225, 100%, 94%);
+$primary-bright-blue:hsl(245, 75%, 52%);
+$primary-bright-blue-hover:hsla(245, 75%, 52%, 0.622);
+$neutral-very-pale-blue: hsl(225, 100%, 98%);
+$neutral-desaturated-blue: hsl(224, 23%, 55%);
+$neutral-dark-blue: hsl(223, 47%, 23%);
+$paragraph-font-size: 1rem;
+$links-font-size: 0.875rem;
+@mixin flexCenter ($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+  line-height: 1.5rem;
+}
+
+p{
+  font-size: $paragraph-font-size;
+  color: $neutral-desaturated-blue;
+  font-weight: 500;
+}
+
+main{
+  min-height: 100vh;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include flexCenter(row);
+
+  .container{
+    height: 90vh;
+    width: 24rem;
+    @include flexCenter(column);
+    background-color: white;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.155);
+    padding-bottom: 2.5rem;
+    border-radius: 0.9375rem;
+
+    .illustration{
+      background-image: url(./images/illustration-hero.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      width: 100%;
+      height: 40%;
+      border-radius: 0.9375rem 0.9375rem 0 0;
+      margin-bottom: 2rem;
+    }
+
+    h1{
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: $neutral-dark-blue;
+      margin-bottom: 1rem;
+    }
+
+    .text{
+      width: 20rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .plan-details{
+      @include flexCenter(row);
+      background-color: $neutral-very-pale-blue;
+      width: 20rem;
+      border-radius: .5rem;
+      margin-bottom: 1.5rem;
+      padding: 1.125rem 1.25rem;
+
+      &-1{
+      
+        img{
+          @include flexCenter(row);
+          border-radius: 100%;
+          margin-right: 0.3125rem;
+        }
+
+      }
+
+      &-2{
+        width: 35%;
+
+        p, h4{
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      &-3{
+        @include flexCenter(row);
+        justify-content: flex-end;
+        flex: 1;
+
+        a{
+          color: $primary-bright-blue;
+          font-size: $links-font-size;
+          font-weight: 700;
+
+          &:hover{
+            color: $primary-bright-blue-hover;
+          }
+        }
+      }
+    }
+
+    button{
+      width: 20rem;
+      padding: 0.5625rem 0;
+      border-radius: .5rem;
+      border: none;
+      color: white;
+      background-color: $primary-bright-blue;
+      box-shadow: 0px 5px 20px hsla(245, 75%, 52%, 0.454);
+      font-size: $links-font-size;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $primary-bright-blue-hover;
+      }
+    }
+
+    .order-cancel{
+      font-size: $links-font-size;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover{
+        color: $neutral-dark-blue;
+      }
+    }
+  }
+}
+
+footer{
+  @include flexCenter(row);
+}

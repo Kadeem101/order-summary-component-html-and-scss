@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+  line-height: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 500;
+}
+
+main {
+  min-height: 100vh;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+main .container {
+  height: 90vh;
+  width: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  justify-content: flex-start;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.155);
+  padding-bottom: 2.5rem;
+  border-radius: 0.9375rem;
+}
+main .container .illustration {
+  background-image: url(./images/illustration-hero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 40%;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  margin-bottom: 2rem;
+}
+main .container h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+  margin-bottom: 1rem;
+}
+main .container .text {
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+main .container .plan-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: hsl(225deg, 100%, 98%);
+  width: 20rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.125rem 1.25rem;
+}
+main .container .plan-details-1 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 100%;
+  margin-right: 0.3125rem;
+}
+main .container .plan-details-2 {
+  width: 35%;
+}
+main .container .plan-details-2 p, main .container .plan-details-2 h4 {
+  width: 100%;
+  text-align: center;
+}
+main .container .plan-details-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1;
+}
+main .container .plan-details-3 a {
+  color: hsl(245deg, 75%, 52%);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+main .container .plan-details-3 a:hover {
+  color: hsla(245deg, 75%, 52%, 0.622);
+}
+main .container button {
+  width: 20rem;
+  padding: 0.5625rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background-color: hsl(245deg, 75%, 52%);
+  box-shadow: 0px 5px 20px hsla(245deg, 75%, 52%, 0.454);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+main .container button:hover {
+  background-color: hsla(245deg, 75%, 52%, 0.622);
+}
+main .container .order-cancel {
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+main .container .order-cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}/*# sourceMappingURL=styles.css.map */
